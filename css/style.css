@@ -11,8 +11,19 @@ body {
   font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   line-height: 1.6;
   letter-spacing: 0.1em;
-  background-color: #fdfcf6; }
-
+  background-color: #fdfcf6; 
+}
+.flexible-images {
+  background-image: url(../images/img_profile.jpg);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px){
+ .flexible-images {
+  height: 250px;
+}
+}
 a {
   color: #14c0c9;
   text-decoration: none; }
@@ -52,11 +63,12 @@ a {
 ------------------------------------------------------------*/
 
 header .profile {
-  height: 500px;
+
   width: 100%;
   background-size: cover;
   background-position: center center;
 }
+
 
 @media (min-width: 768px) {
   a:hover {
